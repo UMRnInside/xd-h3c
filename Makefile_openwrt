@@ -3,11 +3,11 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=xd-h3c
-PKG_VERSION:=2014-09-28
+PKG_VERSION:=2019-10-13
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=git://github.com/godspeed1989/xd-h3c
-PKG_MAINTAINER:=godspeed1989 <godspeed1989@gmail.com>
+PKG_SOURCE_URL:=git://github.com/UMRnInside/xd-h3c
+PKG_MAINTAINER:=UMRnInside <newpage2@foxmail.com>
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)
@@ -22,7 +22,7 @@ define Package/xd-h3c
 	DEPENDS:=+libpcap
 	TITLE:=An XiDian network authentication client
 	#DESCRIPTION:=This variable is obsolete. use the Package/name/description define instead!
-	URL:=https://github.com/godspeed1989/xd-h3c
+	URL:=https://github.com/UMRnInside/xd-h3c
 endef
 
 define Package/xd-h3c/description
