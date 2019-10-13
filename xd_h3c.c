@@ -203,7 +203,7 @@ int main(int argc,char *argv[])
 
     if((strlen(username)!=0)&&(strlen(password)!=0)&&(strlen(devicename)!=0))
     {
-        //printf("%s %s %s\n",username,password,devicename);
+        printf("Authentication(%s, %s, %s)\n",username,password,devicename);
         Authentication(username,password,devicename);
     }
     else
@@ -302,7 +302,7 @@ int set_disp_mode(int fd, int option)
 int checkprocess()
 {
     FILE *read_fp;
-    char command[]="ps -e | grep -w xdh3c";
+    char command[]="ps w | grep -v -w grep | grep -w xdh3c";
     int count=0;
     char ch;
     read_fp = popen(command, "r");
